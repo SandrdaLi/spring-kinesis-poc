@@ -1,0 +1,20 @@
+server.port: 8081
+
+#spring.cloud.stream.kinesis.binder.checkpoint.table: checkpoint
+
+spring:
+  cloud:
+    stream:
+      bindings:
+        input:
+          destination: <Stream name>
+          content-type: application/json
+
+
+cloud:
+  aws:
+    region:
+      static: us-east-1
+    credentials:
+      accessKey: <access key>
+      secretKey: <secret key>
