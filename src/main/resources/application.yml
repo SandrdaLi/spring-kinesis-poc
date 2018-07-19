@@ -7,6 +7,7 @@ spring:
     stream:
       bindings:
         input:
+          group: aaaa
           destination: <Stream name>
           content-type: application/json
 
