@@ -6,6 +6,9 @@ spring:
   cloud:
     stream:
       bindings:
+        output:
+          destination: <Stream Name>
+          content-type: application/json
         input:
           group: aaaa
           destination: <Stream name>
