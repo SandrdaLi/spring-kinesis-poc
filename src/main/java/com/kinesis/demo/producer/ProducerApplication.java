@@ -13,7 +13,9 @@ import org.springframework.web.bind.annotation.RestController;
 @EnableBinding(Processor.class)
 @EnableAutoConfiguration
 public class ProducerApplication {
-
+  
+  @Autowired
+  Processor processor;
 
   public static void main(String[] args) {
     SpringApplication.run(ProducerApplication.class, args);
